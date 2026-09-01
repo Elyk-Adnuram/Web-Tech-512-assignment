@@ -1,3 +1,31 @@
+/* The application must reflect the Richfield institutional visual identity throughout:
+• Richfield Blue (#003087) must be used as the primary brand colour for navigation,
+headings, buttons, and key accents
+• Complementary neutral tones — white (#FFFFFF), light grey (#F5F5F5), and mid-grey
+(#555555) — must be used for backgrounds, body text, and secondary elements
+• The design must reflect a professional academic platform and must not adopt the
+aesthetic of a commercial social media application
+Students must apply styling using one of the following approaches:
+• CSS Modules (recommended) — one .module.css file per component
+• Plain CSS — one or more global stylesheets
+• Styled Components — if the student is familiar with the library
+Students must implement a minimum of three CSS transitions or React-driven animations. These
+must be built using CSS and className toggling — no animation libraries or jQuery are permitted.
+Acceptable implementations include:
+• Fade-in transition applied to new posts as they appear in the feed
+• Smooth hover transitions on all navigation links and action buttons
+• Active/filled styling toggle on the Like button using conditional className
+• Animated focus state on form input fields (e.g., glowing border on focus)
+• Smooth route entry transitions applied to view components
+• Slide or expand animation for the profile preview panel
+The application must be fully responsive across the following viewport sizes:
+• Desktop: 1024px and above
+• Tablet: 768px to 1023px
+• Mobile: 320px to 767px
+Responsive behaviour must be implemented using CSS media queries. The layout must adapt
+gracefully at each breakpoint — content must remain readable, accessible, and visually consistent
+across all screen sizes */
+
 .counter {
   font-size: 16px;
   padding: 5px 10px;
@@ -42,8 +70,7 @@
     z-index: 1;
     top: 34px;
     height: 28px;
-    transform: perspective(2000px) rotateZ(300deg) rotateX(44deg) rotateY(39deg)
-      scale(1.4);
+    transform: perspective(2000px) rotateZ(300deg) rotateX(44deg) rotateY(39deg) scale(1.4);
   }
 
   .vite {
@@ -51,8 +78,7 @@
     top: 107px;
     height: 26px;
     width: auto;
-    transform: perspective(2000px) rotateZ(300deg) rotateX(40deg) rotateY(39deg)
-      scale(0.8);
+    transform: perspective(2000px) rotateZ(300deg) rotateX(40deg) rotateY(39deg) scale(0.8);
   }
 }
 
@@ -167,7 +193,7 @@
 
   &::before,
   &::after {
-    content: '';
+    content: "";
     position: absolute;
     top: -4.5px;
     border: 5px solid transparent;
